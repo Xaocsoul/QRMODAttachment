@@ -1,4 +1,4 @@
-package javacamod.world.blocks.decoration;
+package qrmattach.world.blocks.decoration;
 
 import arc.graphics.*;
 import arc.graphics.g2d.*;
