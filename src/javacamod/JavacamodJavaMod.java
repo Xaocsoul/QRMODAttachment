@@ -1,4 +1,4 @@
-package javacamod;
+package qrmattach;
 
 import arc.*;
 import arc.util.*;
@@ -9,22 +9,22 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-import javacamod.content.*;
+import qrmattach.content.*;
 
-public class JavacamodJavaMod extends Mod{
+public class QrmattachJavaMod extends Mod{
 
-    public JavacamodJavaMod(){
-        Log.info("Loaded JavacamodJavaMod constructor.");
+    public QrmattachJavaMod(){
+        Log.info("Loaded QrmattachJavaMod constructor.");
 
         //listen for game load event
         Events.on(ClientLoadEvent.class, e -> {
             //show dialog upon startup
             Time.runTask(10f, () -> {
-                BaseDialog dialog = new BaseDialog("Java Camod");
-                dialog.cont.add("JCamod").row();
+                BaseDialog dialog = new BaseDialog("QR ATTACH");
+                dialog.cont.add("QR").row();
                 //mod sprites are prefixed with the mod name (this mod is called 'example-java-mod' in its config)
                 dialog.cont.image(Core.atlas.find("icon")).pad(20f).row();
-                dialog.cont.button("I hope you enjoy this mod", dialog::hide).size(100f, 50f);
+                dialog.cont.button("QR Attachment loaded", dialog::hide).size(100f, 50f);
                 dialog.show();
             });
         });
@@ -32,11 +32,6 @@ public class JavacamodJavaMod extends Mod{
 
     @Override
     public void loadContent(){
-        JavacamodBlocks.load();
-        JavacamodItems.load();
-        JavacamodLiquids.load();
-        JavacamodBlocksOverride.init();
-        JavacamodUnitTypesOverride.init();
         Log.info("Loadin");
     }
 
