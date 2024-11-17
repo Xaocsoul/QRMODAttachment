@@ -9,7 +9,7 @@ import mindustry.gen.*;
 import mindustry.mod.*;
 import mindustry.ui.dialogs.*;
 
-import qrmattach.content.*;
+//import qrmattach.content.*;
 
 public class QrmattachJavaMod extends Mod{
 
