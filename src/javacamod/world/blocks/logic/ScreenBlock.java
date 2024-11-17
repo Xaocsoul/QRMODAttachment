@@ -1,4 +1,4 @@
-package javacamod.world.blocks.logic;
+package qrmattach.world.blocks.logic;
 
 import arc.*;
 import arc.func.*;
